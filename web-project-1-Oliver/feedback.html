@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Garfield Museum - Feedback</title>
+  </head>
+  <body>
+    <header style="text-align: center">
+      <h1>Welcome to the feedback page!</h1>
+      <h2>Here, you can show feedback for our website!</h2>
+    </header>
+    <nav style="text-align: center">
+      <a href="index.html">Home</a>
+      <a href="Exhibits.html">Exhibits</a>
+      <a href="Artifacts.html">Artifacts</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+    <main>
+      <p>
+        <mark>
+          <u>
+            NOTE This is a school project, DO NOT put any private information in
+            this form!
+          </u>
+        </mark>
+      </p>
+      <form style="background-color: orange" method="get">
+        <legend>Feedback Form</legend>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="Fname">First Name:</label>
+          <input type="text" name="Fname" placeholder="First Name" required />
+          <label for="Mname">Middle Name:</label>
+          <input type="text" name="Mname" placeholder="Middle Name" />
+          <label for="Lname">Last Name:</label>
+          <input type="text" name="Lname" placeholder="Last Name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Email:" required />
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" placeholder="Phone Number:" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Favourite Things</legend>
+          <label for="FavColour">Favourite Colour:</label>
+          <input type="color" name="FavColour" value="#ff0000" required />
+          <label for="FavNumber">Favourite Number:</label>
+          <input
+            type="number"
+            name="FavNumber"
+            min="1"
+            max="1000000000000"
+            required
+          />
+          <label for="FavMonth">Favourite Month:</label>
+          <input type="month" name="FavMonth" required />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Feedback</legend>
+          <label for="rating">Rating out of 1-5 stars:</label>
+          <select name="Rating" id="rating">
+            <option id="OneRating">1 Star</option>
+            <option id="TwoRating">2 Stars</option>
+            <option id="ThreeRating">3 Stars</option>
+            <option id="FourRating">4 Stars</option>
+            <option id="FiveRating">5 Stars</option>
+          </select>
+          <br />
+          <br />
+          <br />
+          <label for="comment"
+            >Leave your comment / feedback about your review here:</label
+          >
+          <br />
+          <br />
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Leave your comment / feedback here"
+            required
+          ></textarea>
+        </fieldset>
+        <br />
+        <fieldset>
+          <input type="submit" value="Submit Feedback" />
+          <input type="reset" value="Reset Form" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
